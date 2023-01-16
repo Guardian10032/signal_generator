@@ -196,7 +196,7 @@ rr_f=spline(10:10:480,rr_f,1:480);
 interval_rr=round(500*60./rr_f);
 rr_t=cumsum(interval_rr);
 rr_f=spline(rr_t,rr_f,500:500:rr_t(end));
-writematrix(rr_f',"respiratory_norma11.csv");
+writematrix(rr_f',"respiratory_normal1.csv");
 %pattern,resp
 t=1:100;
 x=sin(2*pi/100.*t);
